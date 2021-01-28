@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     # enable data change history for this particular node, must be called after start since it uses subscription
     server.historize_node_data_change(myvar, period=None, count=1000)
-    server.historize_node_data_change(myvari, period=None, count=1000)
+    # server.historize_node_data_change(myvari, period=None, count=1000)
 
     try:
         count = 0
