@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     # setup our server
     server = Server()
-    server.set_endpoint("opc.tcp://172.21.43.200:4840")
+    server.set_endpoint("opc.tcp://172.21.43.150:4840")
 
     # setup our own namespace, not really necessary but should as spec
     uri = "http://examples.freeopcua.github.io"
@@ -24,12 +24,12 @@ if __name__ == "__main__":
     # populating our address space
     myobj = objects.add_object(idx, "MyObject")
     myvar = myobj.add_variable(idx, "MyVariable", ua.Variant(0, ua.VariantType.Double))
-    myvari = myobj.add_variable(idx, "MyVariable1", ua.Variant(0, ua.VariantType.Double))
+    # myvari = myobj.add_variable(idx, "MyVariable1", ua.Variant(0, ua.VariantType.Double))
     myvar.set_writable()  # Set MyVariable to be writable by clients
-    myvari.set_writable()  # Set MyVariable to be writable by clients
+    # myvari.set_writable()  # Set MyVariable to be writable by clients
 
     # Configure server to use sqlite as history database (default is a simple memory dict)
-    # server.iserver.history_manager.set_storage(HistorySQLite("my_datavalue_history11.sql"))
+    server.iserver.history_manager.set_storage(HistorySQLite("mydata.sql"))
 
     # starting!
     server.start()
@@ -44,7 +44,7 @@ if __name__ == "__main__":
             time.sleep(1)
             count += 0.1
             myvar.set_value(math.sin(count))
-            myvari.set_value(math.cos(count))
+            # myvari.set_value(math.cos(count))
 
     finally:
         # close connection, remove subscriptions, etc
