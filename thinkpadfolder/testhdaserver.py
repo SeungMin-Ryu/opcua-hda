@@ -8,7 +8,7 @@ from opcua import ua, Server
 from myhistory import HistorySQLite
 
 if __name__ == "__main__":
-    con = pymysql.connect(host='172.21.43.101', user='seungmin', password='fbtmdals12', db='subclient', charset='utf8')
+    con = pymysql.connect(host='localhost', user='root', password='fbtmdals12', db='test1', charset='utf8')
     cur = con.cursor()
     sql = "select value from test1 order by _id desc limit 1"
     cur.execute(sql)
@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
 
     server = Server()
-    server.set_endpoint("opc.tcp://172.21.43.150:4840")
+    server.set_endpoint("opc.tcp://localhost:4840")
 
     uri = "http://examples.freeopcua.github.io"
     idx = server.register_namespace(uri)

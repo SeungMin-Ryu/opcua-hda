@@ -43,11 +43,11 @@ class SubHandler(object):
 if __name__ == "__main__":
 
 
-    con = pymysql.connect(host = '172.21.43.101', user = 'seungmin', password='fbtmdals12', db = 'subclient', charset='utf8')
+    con = pymysql.connect(host = 'localhost', user = 'root', password='fbtmdals12', db = 'test1', charset='utf8')
     cur = con.cursor()
     sql = "insert into test1(ServerTimestamp,SourceTimestamp,statusCode,value) values(%s,%s,%s,%s)"
 
-    client = Client("opc.tcp://172.21.43.101:53530/OPCUA/SimulationServer")
+    client = Client("opc.tcp://DESKTOP-6SNC49B:53530/OPCUA/SimulationServer")
     client.connect()
 
     myevent =client.get_node("ns=3;i=1001")
