@@ -1,7 +1,6 @@
 import sys
 sys.path.insert(0, "..")
 
-import time
 import pymysql
 
 from opcua import ua, Server
@@ -33,9 +32,8 @@ if __name__ == "__main__":
     myvar.set_writable()
     myvar.set_value(result1[0])
     server.iserver.history_manager.set_storage(HistorySQLite("my_datavalue_history11.sql"))
-    print("111111111", server.serverstate)
     server.start()
-    print("222222222", server.serverstate)
+
     server.historize_node_data_change(myvar, period=None, count=20)
     x = list(result1)
     while server.serverstate == 1:
