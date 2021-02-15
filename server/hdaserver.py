@@ -5,8 +5,8 @@ import math
 
 
 from opcua import ua, Server
+# from opcua.server.history_sql import HistorySQLite
 from opcua.server.history_sql import HistorySQLite
-
 
 if __name__ == "__main__":
 
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     server.start()
 
     # enable data change history for this particular node, must be called after start since it uses subscription
-    server.historize_node_data_change(myvar, period=None, count=1000)
+    server.historize_node_data_change(myvar, period=None, count=50)
     # server.historize_node_data_change(myvari, period=None, count=1000)
 
     try:
