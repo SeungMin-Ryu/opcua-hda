@@ -19,16 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdb1ac2f-1927-4e96-9969-a376734d8fae" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/subclient.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_datavalue_history.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_datavalue_history11.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_datavalue_history1111.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/my_datavalue_history11.sql" beforeDir="false" afterPath="$PROJECT_DIR$/server/my_datavalue_history11.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mydata.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.py" beforeDir="false" />
-    </list>
+    <list default="true" id="bdb1ac2f-1927-4e96-9969-a376734d8fae" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
