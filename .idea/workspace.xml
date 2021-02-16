@@ -188,9 +188,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.server" />
       <item itemvalue="Python.dbserver" />
       <item itemvalue="Python.hdaserver" />
-      <item itemvalue="Python.server" />
       <item itemvalue="Python.subclienttest" />
       <item itemvalue="Python.testbdserver" />
     </list>
