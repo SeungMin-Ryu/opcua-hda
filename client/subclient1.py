@@ -30,8 +30,6 @@ class SubHandler(object):
 
         print(data.monitored_item.Value.SourceTimestamp)
         print("counter", node, val)
-        cur.execute(sql,(val))
-        con.commit()
 
 
     def event_notification(self, event):
@@ -40,22 +38,16 @@ class SubHandler(object):
 
 if __name__ == "__main__":
 
-
-    con = pymysql.connect(host = '172.21.43.101', user = 'seungmin', password='fbtmdals12', db = 'subclient', charset='utf8')
-    cur = con.cursor()
-    sql = "insert into subclient(counter) values(%s)"
-
     client = Client("opc.tcp://172.21.43.101:53530/OPCUA/SimulationServer")
     client.connect()
-
     myevent =client.get_node("ns=3;i=1001")
     print("MyFirstEventType is: ", myevent)
 
     handler = SubHandler()
     sub = client.create_subscription(500, handler)
-    handle = sub.subscribe_data_change(myevent)
-    # ddddddddddd
-
+    print("11111111111111")
+    sub.subscribe_data_change(myevent)
+    print("22222222222222")
     embed()
-    con.close()
+    print("33333333333333")
     client.disconnect()
