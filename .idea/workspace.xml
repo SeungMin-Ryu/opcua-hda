@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdb1ac2f-1927-4e96-9969-a376734d8fae" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/aggclient.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myhistory_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/aggserver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/subclient1.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/subclient1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/subclienttest.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/subclienttest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/my_datavalue_history11.sql" beforeDir="false" afterPath="$PROJECT_DIR$/server/my_datavalue_history11.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/aggclient.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/aggserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/aggserver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mydata.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,24 +232,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2539" height="237" key="GridCell.Tab.0.bottom" timestamp="1613719511581">
+    <state width="2539" height="237" key="GridCell.Tab.0.bottom" timestamp="1613726236416">
       <screen x="2560" y="-702" width="2560" height="1400" />
     </state>
-    <state width="2539" height="237" key="GridCell.Tab.0.bottom/0.0.1707.920/2560.-702.2560.1400@2560.-702.2560.1400" timestamp="1613719511581" />
-    <state width="2539" height="237" key="GridCell.Tab.0.center" timestamp="1613719511581">
+    <state width="2539" height="237" key="GridCell.Tab.0.bottom/0.0.1707.920/2560.-702.2560.1400@2560.-702.2560.1400" timestamp="1613726236416" />
+    <state width="2539" height="237" key="GridCell.Tab.0.center" timestamp="1613726236416">
       <screen x="2560" y="-702" width="2560" height="1400" />
     </state>
-    <state width="2539" height="237" key="GridCell.Tab.0.center/0.0.1707.920/2560.-702.2560.1400@2560.-702.2560.1400" timestamp="1613719511581" />
-    <state width="2539" height="237" key="GridCell.Tab.0.left" timestamp="1613719511580">
+    <state width="2539" height="237" key="GridCell.Tab.0.center/0.0.1707.920/2560.-702.2560.1400@2560.-702.2560.1400" timestamp="1613726236416" />
+    <state width="2539" height="237" key="GridCell.Tab.0.left" timestamp="1613726236416">
       <screen x="2560" y="-702" width="2560" height="1400" />
     </state>
-    <state width="2539" height="237" key="GridCell.Tab.0.left/0.0.1707.920/2560.-702.2560.1400@2560.-702.2560.1400" timestamp="1613719511580" />
-    <state width="2539" height="237" key="GridCell.Tab.0.right" timestamp="1613719511581">
+    <state width="2539" height="237" key="GridCell.Tab.0.left/0.0.1707.920/2560.-702.2560.1400@2560.-702.2560.1400" timestamp="1613726236416" />
+    <state width="2539" height="237" key="GridCell.Tab.0.right" timestamp="1613726236416">
       <screen x="2560" y="-702" width="2560" height="1400" />
     </state>
-    <state width="2539" height="237" key="GridCell.Tab.0.right/0.0.1707.920/2560.-702.2560.1400@2560.-702.2560.1400" timestamp="1613719511581" />
+    <state width="2539" height="237" key="GridCell.Tab.0.right/0.0.1707.920/2560.-702.2560.1400@2560.-702.2560.1400" timestamp="1613726236416" />
     <state width="2539" height="492" key="GridCell.Tab.1.bottom" timestamp="1613376512625">
       <screen x="2560" y="-702" width="2560" height="1400" />
     </state>

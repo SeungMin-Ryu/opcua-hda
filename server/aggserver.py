@@ -2,7 +2,7 @@ import sys
 sys.path.insert(0, "..")
 
 import time
-from client.aggclient import *
+from aggclient import *
 from opcua import ua, Server
 from myhistory_1 import HistorySQLite
 
