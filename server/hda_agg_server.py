@@ -2,9 +2,9 @@ import sys
 sys.path.insert(0, "..")
 
 import time
-from aggclient import *
+from hda_agg_clinet_module import *
 from opcua import ua, Server
-from myhistory_1 import HistorySQLite
+from hda_agg_module import HistorySQLite
 
 
 if __name__ == "__main__":

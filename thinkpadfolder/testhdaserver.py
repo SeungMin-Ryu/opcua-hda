@@ -5,7 +5,7 @@ import time
 import pymysql
 
 from opcua import ua, Server
-from myhistory import HistorySQLite
+from connect_db_module import HistorySQLite
 
 if __name__ == "__main__":
     con = pymysql.connect(host='localhost', user='root', password='fbtmdals12', db='test1', charset='utf8')

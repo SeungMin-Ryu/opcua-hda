@@ -4,7 +4,7 @@ sys.path.insert(0, "..")
 import pymysql
 
 from opcua import ua, Server
-from myhistory import HistorySQLite
+from connect_db_module import HistorySQLite
 
 
 if __name__ == "__main__":
