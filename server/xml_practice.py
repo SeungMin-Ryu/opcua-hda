@@ -3,7 +3,7 @@ sys.path.insert(0, "..")
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import parse
 
-tree = ET.parse('../OhPLCmapCompleted.xml')
+tree = ET.parse('../xml_folder/OhPLCmapCompleted.xml')
 root = tree.getroot()
 
 ns = {'default':'http://opcfoundation.org/UA/2011/03/UANodeSet.xsd',

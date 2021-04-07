@@ -2,7 +2,6 @@ import logging
 from datetime import timedelta
 from datetime import datetime
 from threading import Lock
-# import sqlite3
 import pymysql
 
 from opcua import ua
@@ -23,13 +22,10 @@ class HistorySQLite(HistoryStorageInterface):
     def __init__(self):
         self.logger = logging.getLogger(__name__)
         self._datachanges_period = {}
-        # self._db_file = path
         self._lock = Lock()
         self._event_fields = {}
 
-        # self._conn = sqlite3.connect(self._db_file, detect_types=sqlite3.PARSE_DECLTYPES, check_same_thread=False)
-        self._conn = pymysql.connect(host='172.21.43.101', user='seungmin', password='fbtmdals12', db='subclient',
-                                  charset='utf8')
+        self._conn = pymysql.connect(host='172.21.43.101', user='seungmin', password='fbtmdals12', db='subclient', charset='utf8')           #pymysql에 접속 정보
     def new_historized_node(self, node_id, period, count=0):
         with self._lock:
             _c_new = self._conn.cursor()
