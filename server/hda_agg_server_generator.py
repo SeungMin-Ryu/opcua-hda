@@ -2,7 +2,7 @@ import sys
 sys.path.insert(0, "..")
 mod = sys.modules[__name__]
 
-from hda_agg_module.hda_agg_client_module1 import *
+from hda_agg_module.hda_agg_client_module import *
 from opcua import ua, Server
 from hda_agg_module.hda_agg_module import HistorySQLite
 
@@ -34,7 +34,7 @@ if __name__ == "__main__":
             server.historize_node_data_change(globals()['variable_{}'.format(a)], period=None, count=100)
             a += 1
         try:
-            while server.serverstate == 1:
+            while server.start():
                 if Global.node is not None:
 
                     for num in range(0, len(Global.node)):
