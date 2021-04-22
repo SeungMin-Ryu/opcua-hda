@@ -5,18 +5,17 @@ import os
 import socket
 
 from hda_agg_module.hda_gen_client_module import *
-from opcua import ua, Server
+from opcua import Server
 from hda_agg_module.hda_agg_module import HistorySQLite
 from tkinter import *
 from tkinter import filedialog
-from openpyxl.workbook import Workbook
 from openpyxl import load_workbook
 from PIL import Image, ImageTk
 
 
 
 def open_file():
-    filename = filedialog.askopenfilename(initialdir='../CI_image', title='Select A excel File',
+    filename = filedialog.askopenfilename(initialdir='../excel_file', title='Select A excel File',
                                           filetypes=(("excel file", "*.xlsx"), ("all file", "*.*")))
     wb = load_workbook(filename)
     ws = wb.active
